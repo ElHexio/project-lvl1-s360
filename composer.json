@@ -2,7 +2,7 @@
     "name": "mralejandro/brain-games",
     "bin": ["bin/brain-games"],
     "description": "A set of console mini games",
-    "type": "project",
+    "type": "library",
     "authors": [
         {
             "name": "Alexander Shcherbachenko",
