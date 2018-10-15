@@ -1,0 +1,16 @@
+{
+    "name": "mralejandro/brain-games",
+    "bin": ["bin/brain-games"],
+    "description": "A set of console mini games",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Alexander Shcherbachenko",
+            "email": "misteralejandro777@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "license": "MIT"
+}
