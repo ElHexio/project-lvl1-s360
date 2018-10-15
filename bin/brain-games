@@ -2,4 +2,8 @@
 
 <?php
 
-echo 'Welcome to the Brain Games!' . PHP_EOL;
+use function BrainGames\Cli\run;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+run();

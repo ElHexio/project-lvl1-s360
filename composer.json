@@ -11,7 +11,13 @@
     ],
     "keywords": ["console","game","gaming"],
     "require": {
-        "php": ">=7.0.0"
+        "php": ">=7.0.0",
+        "wp-cli/php-cli-tools": "^0.11.10"
     },
-    "license": "MIT"
+    "license": "MIT",
+    "autoload": {
+         "files": [
+             "src/Cli.php"
+         ]
+    }
 }
