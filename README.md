@@ -6,3 +6,7 @@
 
 ## Installation
 [![asciicast](https://asciinema.org/a/t4czJfIttz0LKHz7Krq0q3rEK.png)](https://asciinema.org/a/t4czJfIttz0LKHz7Krq0q3rEK)
+
+## Even Numbers game
+[![asciicast](https://asciinema.org/a/HLtUZTcrZmlYLxeaFDZNsYGWe.png)](https://asciinema.org/a/HLtUZTcrZmlYLxeaFDZNsYGWe)
+
