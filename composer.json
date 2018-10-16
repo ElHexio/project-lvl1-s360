@@ -1,20 +1,20 @@
 {
     "name": "mralejandro/brain-games",
-    "bin": ["bin/brain-games"],
     "description": "A set of console mini games",
     "type": "project",
+    "license": "MIT",
+    "bin": ["bin/brain-games"],
+    "keywords": ["console","game","gaming"],
     "authors": [
         {
             "name": "Alexander Shcherbachenko",
             "email": "misteralejandro777@gmail.com"
         }
     ],
-    "keywords": ["console","game","gaming"],
     "require": {
         "php": ">=7.0.0",
         "wp-cli/php-cli-tools": "^0.11.10"
     },
-    "license": "MIT",
     "autoload": {
          "files": [
              "src/Cli.php"
