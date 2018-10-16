@@ -5,7 +5,7 @@ namespace BrainGames\Cli;
 use function cli\line;
 use function cli\prompt;
 
-function run(string $gameId)
+function run(string $gameId = '')
 {
     line('Welcome to the Brain Games!');
 
