@@ -1,6 +1,7 @@
 <?php
 
 namespace BrainGames\Games\EvenNumbers;
+use function BrainGames\ConsoleGameEngine\play;
 
 const ANSWER_POSITIVE = 'yes';
 const ANSWER_NEGATIVE = 'no';
@@ -8,39 +9,19 @@ const ROUNDS_NUMBER = 3;
 const NUMBER_MIN = 1;
 const NUMBER_MAX = 99;
 
-function play($notifyPlayer, $askPlayer)
+function run()
 {
-    $gameRules = getGameRules();
-    $notifyPlayer($gameRules);
-    $playerName = $askPlayer('May I have your name?');
-    $notifyPlayer("Hello, %s!\n", $playerName);
+    $getRules = function () {
+        return getGameRules();
+    };
 
-    $isPlayerWinner = true;
-    $rounds = ROUNDS_NUMBER;
-    for ($i = 1; $i <= $rounds; $i++) {
+    $getQuestionAnswerPair = function () {
         $number = getNextNumber();
-        $notifyPlayer('Question: %s', $number);
-
-        $guess = $askPlayer('Your answer');
         $correctAnswer = getCorrectAnswer($number);
-        $guessResult = $correctAnswer === $guess;
+        return [$number, $correctAnswer];
+    };
 
-        if (!$guessResult) {
-            $notifyPlayer("'%s' is wrong answer ;(. Correct answer was '%s'.", $guess, $correctAnswer);
-            $notifyPlayer("Let's try again, %s!", $playerName);
-            $isPlayerWinner = false;
-            break;
-        }
-
-        $notifyPlayer('Correct!');
-    }
-
-    if (!$isPlayerWinner) {
-        return false;
-    }
-
-    $notifyPlayer('Congratulations, %s!', $playerName);
-    return true;
+    play($getRules, $getQuestionAnswerPair);
 }
 
 function getGameRules()
