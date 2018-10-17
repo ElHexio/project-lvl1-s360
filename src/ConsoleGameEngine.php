@@ -24,11 +24,12 @@ function play(callable $getRules, callable $getQuestionAnswerPair)
         if ($guess !== $correctAnswer) {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $guess, $correctAnswer);
             line("Let's try again, %s!", $playerName);
-            exit;
+            return false;
         }
 
         line('Correct!');
     }
 
     line('Congratulations, %s!', $playerName);
+    return true;
 }

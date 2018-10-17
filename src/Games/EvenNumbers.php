@@ -1,8 +1,10 @@
 <?php
 
 namespace BrainGames\Games\EvenNumbers;
+
 use function BrainGames\ConsoleGameEngine\play;
 
+const GAME_RULES = 'Answer "yes" if number even otherwise answer "no".';
 const ANSWER_POSITIVE = 'yes';
 const ANSWER_NEGATIVE = 'no';
 const NUMBER_MIN = 1;
@@ -11,30 +13,16 @@ const NUMBER_MAX = 99;
 function run()
 {
     $getRules = function () {
-        return getGameRules();
+        return GAME_RULES;
     };
 
     $getQuestionAnswerPair = function () {
-        $number = getNextNumber();
-        $correctAnswer = getCorrectAnswer($number);
-        return [$number, $correctAnswer];
+        $question = rand(NUMBER_MIN, NUMBER_MAX);
+        $correctAnswer = getCorrectAnswer($question);
+        return [$question, $correctAnswer];
     };
 
     play($getRules, $getQuestionAnswerPair);
-}
-
-function getGameRules()
-{
-    return sprintf(
-        'Answer "%s" if number even otherwise answer "%s".',
-        ANSWER_POSITIVE,
-        ANSWER_NEGATIVE
-    );
-}
-
-function getNextNumber($minValue = NUMBER_MIN, $maxValue = NUMBER_MAX)
-{
-    return rand($minValue, $maxValue);
 }
 
 function getCorrectAnswer(int $number)
