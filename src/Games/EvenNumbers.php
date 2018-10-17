@@ -5,7 +5,6 @@ use function BrainGames\ConsoleGameEngine\play;
 
 const ANSWER_POSITIVE = 'yes';
 const ANSWER_NEGATIVE = 'no';
-const ROUNDS_NUMBER = 3;
 const NUMBER_MIN = 1;
 const NUMBER_MAX = 99;
 
