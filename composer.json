@@ -14,7 +14,7 @@
     "autoload": {
          "files": [
              "src/Cli.php",
-             "src/ConsoleGame.php",
+             "src/ConsoleGameEngine.php",
              "src/Games/EvenNumbers.php"
          ]
     },
