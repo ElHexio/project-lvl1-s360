@@ -11,10 +11,6 @@ const AVAILABLE_OPERATIONS = ['*', '+', '-'];
 
 function run()
 {
-    $getDescription = function () {
-        return DESCRIPTION;
-    };
-
     $getQuestionAnswerPair = function () {
         $leftOperand = rand(NUMBER_MIN, NUMBER_MAX);
         $rightOperand = rand(NUMBER_MIN, NUMBER_MAX);
@@ -25,7 +21,7 @@ function run()
         return [$question, $correctAnswer];
     };
 
-    play($getDescription, $getQuestionAnswerPair);
+    play(DESCRIPTION, $getQuestionAnswerPair);
 }
 
 function calculate($operation, $lelfOperand, $rightOperand)

@@ -12,17 +12,13 @@ const NUMBER_MAX = 99;
 
 function run()
 {
-    $getDescription = function () {
-        return DESCRIPTION;
-    };
-
     $getQuestionAnswerPair = function () {
         $question = rand(NUMBER_MIN, NUMBER_MAX);
         $correctAnswer = getCorrectAnswer($question);
         return [$question, $correctAnswer];
     };
 
-    play($getDescription, $getQuestionAnswerPair);
+    play(DESCRIPTION, $getQuestionAnswerPair);
 }
 
 function getCorrectAnswer(int $number)

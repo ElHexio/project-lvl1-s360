@@ -7,10 +7,9 @@ use function cli\prompt;
 
 const ROUNDS_NUMBER = 3;
 
-function play(callable $getDescription, callable $getQuestionAnswerPair)
+function play(string $description, callable $getQuestionAnswerPair)
 {
     line('Welcome to the Brain Games!');
-    $description = $getDescription();
     line($description . "\n");
 
     $playerName = prompt('May I have your name?');
