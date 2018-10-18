@@ -4,7 +4,7 @@ namespace BrainGames\Games\EvenNumbers;
 
 use function BrainGames\ConsoleGameEngine\play;
 
-const GAME_RULES = 'Answer "yes" if number even otherwise answer "no".';
+const DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';
 const ANSWER_POSITIVE = 'yes';
 const ANSWER_NEGATIVE = 'no';
 const NUMBER_MIN = 1;
@@ -12,8 +12,8 @@ const NUMBER_MAX = 99;
 
 function run()
 {
-    $getRules = function () {
-        return GAME_RULES;
+    $getDescription = function () {
+        return DESCRIPTION;
     };
 
     $getQuestionAnswerPair = function () {
@@ -22,7 +22,7 @@ function run()
         return [$question, $correctAnswer];
     };
 
-    play($getRules, $getQuestionAnswerPair);
+    play($getDescription, $getQuestionAnswerPair);
 }
 
 function getCorrectAnswer(int $number)

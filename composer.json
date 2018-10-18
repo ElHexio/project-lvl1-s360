@@ -3,7 +3,7 @@
     "description": "A set of console mini games",
     "type": "project",
     "license": "MIT",
-    "bin": ["bin/brain-games", "bin/brain-even"],
+    "bin": ["bin/brain-games", "bin/brain-even", "bin/brain-calc"],
     "keywords": ["console","game","gaming"],
     "authors": [
         {
@@ -15,7 +15,8 @@
          "files": [
              "src/Cli.php",
              "src/ConsoleGameEngine.php",
-             "src/Games/EvenNumbers.php"
+             "src/Games/EvenNumbers.php",
+             "src/Games/Calculation.php"
          ]
     },
     "require": {

@@ -7,21 +7,21 @@ use function cli\prompt;
 
 const ROUNDS_NUMBER = 3;
 
-function play(callable $getRules, callable $getQuestionAnswerPair)
+function play(callable $getDescription, callable $getQuestionAnswerPair)
 {
     line('Welcome to the Brain Games!');
-    $rules = $getRules();
-    line($rules . "\n");
+    $description = $getDescription();
+    line($description . "\n");
 
     $playerName = prompt('May I have your name?');
     line("Hello, %s!\n", $playerName);
 
     for ($i = 1; $i <= ROUNDS_NUMBER; $i++) {
         [$question, $correctAnswer] = $getQuestionAnswerPair();
-        line('Question: %s', $question);
+        line('Question: %s', (string) $question);
         $guess = prompt('Your answer');
 
-        if ($guess !== $correctAnswer) {
+        if ($guess !== (string) $correctAnswer) {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $guess, $correctAnswer);
             line("Let's try again, %s!", $playerName);
             return false;
