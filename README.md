@@ -10,3 +10,5 @@
 ## Even Numbers game
 [![asciicast](https://asciinema.org/a/HLtUZTcrZmlYLxeaFDZNsYGWe.png)](https://asciinema.org/a/HLtUZTcrZmlYLxeaFDZNsYGWe)
 
+## Calculation game
+[![asciicast](https://asciinema.org/a/HrYodOzfuimXZIbVNXEPeGaH7.png)](https://asciinema.org/a/HrYodOzfuimXZIbVNXEPeGaH7)
