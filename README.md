@@ -12,3 +12,6 @@
 
 ## Calculation game
 [![asciicast](https://asciinema.org/a/HrYodOzfuimXZIbVNXEPeGaH7.png)](https://asciinema.org/a/HrYodOzfuimXZIbVNXEPeGaH7)
+
+## Greatest common divider game
+[![asciicast](https://asciinema.org/a/Wf7LcbwPC43NDNmHkJni2kg46.png)](https://asciinema.org/a/Wf7LcbwPC43NDNmHkJni2kg46)
