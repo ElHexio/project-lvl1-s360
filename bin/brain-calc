@@ -13,4 +13,3 @@ if (file_exists($autoloadPath1)) {
 }
 
 run();
-

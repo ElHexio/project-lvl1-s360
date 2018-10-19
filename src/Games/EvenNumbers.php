@@ -5,8 +5,6 @@ namespace BrainGames\Games\EvenNumbers;
 use function BrainGames\ConsoleGameEngine\play;
 
 const DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';
-const ANSWER_POSITIVE = 'yes';
-const ANSWER_NEGATIVE = 'no';
 const NUMBER_MIN = 1;
 const NUMBER_MAX = 99;
 
@@ -23,7 +21,7 @@ function run()
 
 function getCorrectAnswer(int $number)
 {
-    return isEven($number) ? ANSWER_POSITIVE : ANSWER_NEGATIVE;
+    return isEven($number) ? 'yes' : 'no';
 }
 
 function isEven(int $number)

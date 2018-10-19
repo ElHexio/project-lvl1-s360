@@ -26,18 +26,15 @@ function run()
 
 function calculate($operation, $lelfOperand, $rightOperand)
 {
-    $result = 0;
-
     switch ($operation) {
         case '*':
             $result = $lelfOperand * $rightOperand;
             break;
-        case '+':
-            $result = $lelfOperand + $rightOperand;
-            break;
         case '-':
             $result = $lelfOperand - $rightOperand;
             break;
+        default:
+            $result = $lelfOperand + $rightOperand;
     }
 
     return $result;

@@ -23,12 +23,11 @@ function play(string $description, callable $getQuestionAnswerPair)
         if ($guess !== (string) $correctAnswer) {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $guess, $correctAnswer);
             line("Let's try again, %s!", $playerName);
-            return false;
+            return;
         }
 
         line('Correct!');
     }
 
     line('Congratulations, %s!', $playerName);
-    return true;
 }
