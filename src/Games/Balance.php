@@ -22,6 +22,7 @@ function run()
 function balance(int $number)
 {
     $digits = str_split((string) $number);
+    $digits = array_map('intval', $digits);
     $lastIndex = count($digits) - 1;
     $minToMax = $digits;
 
