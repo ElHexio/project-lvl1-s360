@@ -6,9 +6,10 @@
     "keywords": ["console","game","gaming"],
     "bin": [
         "bin/brain-games",
+        "bin/brain-gcd",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gcd",
+        "bin/brain-prime",
         "bin/brain-balance",
         "bin/brain-progression"
     ],
@@ -26,6 +27,7 @@
              "src/Games/Calculation.php",
              "src/Games/Progression.php",
              "src/Games/Balance.php",
+             "src/Games/Prime.php",
              "src/Games/Gcd.php"
          ]
     },
