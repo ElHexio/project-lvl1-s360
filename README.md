@@ -21,3 +21,6 @@
 
 ## Arithmetic progression game
 [![asciicast](https://asciinema.org/a/AHUzzsOgPvBUomeFC06hwrQDW.png)](https://asciinema.org/a/AHUzzsOgPvBUomeFC06hwrQDW)
+
+## Prime numbers game
+[![asciicast](https://asciinema.org/a/P7k9pwpIHDP9Fv5XHkc6JDeUR.png)](https://asciinema.org/a/P7k9pwpIHDP9Fv5XHkc6JDeUR)
