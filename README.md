@@ -15,3 +15,6 @@
 
 ## Greatest common divider game
 [![asciicast](https://asciinema.org/a/Wf7LcbwPC43NDNmHkJni2kg46.png)](https://asciinema.org/a/Wf7LcbwPC43NDNmHkJni2kg46)
+
+## Balance number game
+[![asciicast](https://asciinema.org/a/h1RtXfSm1k11UeqTYF2mu8hp7.png)](https://asciinema.org/a/h1RtXfSm1k11UeqTYF2mu8hp7)
