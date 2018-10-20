@@ -18,3 +18,6 @@
 
 ## Balance number game
 [![asciicast](https://asciinema.org/a/h1RtXfSm1k11UeqTYF2mu8hp7.png)](https://asciinema.org/a/h1RtXfSm1k11UeqTYF2mu8hp7)
+
+## Arithmetic progression game
+[![asciicast](https://asciinema.org/a/AHUzzsOgPvBUomeFC06hwrQDW.png)](https://asciinema.org/a/AHUzzsOgPvBUomeFC06hwrQDW)
