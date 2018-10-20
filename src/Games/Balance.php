@@ -42,5 +42,5 @@ function balance(int $number)
     }
     unset($min, $max);
 
-    return (int) implode('', $minToMax);
+    return implode('', $minToMax);
 }
