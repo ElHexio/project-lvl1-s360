@@ -3,8 +3,14 @@
     "description": "A set of console mini games",
     "type": "project",
     "license": "MIT",
-    "bin": ["bin/brain-games", "bin/brain-even", "bin/brain-calc", "bin/brain-gcd"],
     "keywords": ["console","game","gaming"],
+    "bin": [
+        "bin/brain-games",
+        "bin/brain-even",
+        "bin/brain-calc",
+        "bin/brain-gcd",
+        "bin/brain-balance"
+    ],
     "authors": [
         {
             "name": "Alexander Shcherbachenko",
@@ -17,6 +23,7 @@
              "src/ConsoleGameEngine.php",
              "src/Games/EvenNumbers.php",
              "src/Games/Calculation.php",
+             "src/Games/Balance.php",
              "src/Games/Gcd.php"
          ]
     },
