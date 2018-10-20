@@ -9,7 +9,8 @@
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd",
-        "bin/brain-balance"
+        "bin/brain-balance",
+        "bin/brain-progression"
     ],
     "authors": [
         {
@@ -23,6 +24,7 @@
              "src/ConsoleGameEngine.php",
              "src/Games/EvenNumbers.php",
              "src/Games/Calculation.php",
+             "src/Games/Progression.php",
              "src/Games/Balance.php",
              "src/Games/Gcd.php"
          ]
